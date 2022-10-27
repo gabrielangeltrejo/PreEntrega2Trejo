@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Nuestra Agencia</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="prenav">
+        <p>Comunicate con nosotros: 0800-5555555</p>
+        <p>Encontranos tambien en:</p>
+      </div>
+      <nav class="menu">
+        <h1 class="menu_titulo">Nuestra Agencia</h1>
+        <ul class="nav">
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="iniciar.html">Ingresar</a></li>
+          <li><a href="quienes-somos.html"> Quienes somos</a></li>
+          <li class="menu_item active"><a href="contacto.html"> Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <form action="contacto">
+          <h3>Contacto</h3>
+          <div>
+            <label for="nombre-apellido">Nombre y Apellido</label>
+            <input
+              type="text"
+              required
+              id="nombre-apellido"
+              placeholder="Juan Perez"
+            />
+          </div>
+
+          <div>
+            <label for="e-mail">E-mail</label>
+            <input
+              type="email"
+              required
+              id="e-mail"
+              placeholder="juanperez@gmail.com"
+            />
+          </div>
+
+          <div>
+            <label for="telefono-celular">Telefono/ Celular</label>
+            <input
+              type="text"
+              required
+              id="telefono-celular"
+              placeholder="(011)1528324555"
+            />
+          </div>
+
+          <div>
+            <label for="mensaje">Mensaje (optativo)</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+          </div>
+
+          <div>
+            <input type="submit"/>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Todos los derechos reservados</p>
+    </footer>
+
+  </body>
+</html>
