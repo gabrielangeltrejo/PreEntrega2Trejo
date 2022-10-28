@@ -129,6 +129,12 @@ main {
   
 }
 
+.destinos_inter_nacio:hover{
+  transform: scale(1.2);
+  transition-duration: 1s;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.529);
+}
+
 .destinos_imagen {
   width: 100%;
 }
@@ -147,6 +153,11 @@ main {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
+}
+
+.destinos_boton:hover{
+  background-color:black;
+  color: white;
 }
 
 .destinos_boton,
@@ -173,6 +184,13 @@ main {
   border-radius: 10px;
 }
 
+.caja__escapada:hover{
+  transform: scale(1.2);
+  transition-duration: 1s;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.529);
+  
+}
+
 .escapada_imagen {
   width: 100%;
 }
@@ -187,6 +205,10 @@ main {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
+}
+.escapada_ref:hover{
+  background-color:black;
+  color: white;
 }
 
 .escapada_ref,
@@ -291,17 +313,11 @@ a {
 
 @media (min-width: 1200px){
   .destinos__totales{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: repeat(4, 25% );
-  }
-/*
-  .caja_destinos_nacio{
     display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  }*/
+  }
 }
 
 
