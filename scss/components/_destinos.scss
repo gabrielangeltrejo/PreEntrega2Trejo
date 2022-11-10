@@ -1,0 +1,102 @@
+.destinos_mundo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .destinos_inter_nacio {
+    width: 400px;
+    background-color: rgb(186, 209, 194);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    
+  }
+  
+  .destinos_inter_nacio:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.529);
+  }
+  
+  .destinos_imagen {
+    width: 100%;
+  }
+  
+  .destinos_titulo {
+    font-size: 30px;
+  }
+  
+  .destinos_parrafo {
+    font-size: 20px;
+  }
+  
+  .destinos_boton {
+    background-color: rgb(24, 39, 71);
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .destinos_boton:hover{
+    background-color:black;
+    color: white;
+  }
+  
+  .destinos_boton,
+  .destinos_imagen,
+  .destinos_parrafo {
+    margin-bottom: 10px;
+  }
+  
+  /*ESCAPADA*/
+  
+  .destinos__escapada{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .caja__escapada {
+    width: 300px;
+    background-color:rgb(186, 209, 194);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .caja__escapada:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.529);
+    
+  }
+  
+  .escapada_imagen {
+    width: 100%;
+  }
+  
+  .escapada_titulo {
+    font-size: 30px;
+  }
+  
+  .escapada_ref {
+    background-color: rgb(24, 39, 71);
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .escapada_ref:hover{
+    background-color:black;
+    color: white;
+  }
+  
+  .escapada_ref,
+  .escapada_imagen {
+    margin-bottom: 10px;
+  }
