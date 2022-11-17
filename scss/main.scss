@@ -1,5 +1,7 @@
+@import"./base/reset";
 
-@import "./components/destinos";
-@import "./components/header";
-@import "./components/footer";
-@import "./base/base";
+@import"./pages/home";
+
+@import"./partials/header";
+@import"./partials/destinos";
+@import"./partials/footer";
