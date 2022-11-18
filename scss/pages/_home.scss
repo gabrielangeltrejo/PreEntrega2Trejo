@@ -17,6 +17,8 @@ body {
     background-color: rgba(255, 255, 255, 0.358);
     display: flex;
     justify-content: center;
+
+
   }
 
   .lado__header{
@@ -26,8 +28,9 @@ body {
     .nav__ul{
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 
-    .menu__item{
+    .nav__item{
       background-color: rgba(127, 200, 170, 0.597);
       padding: 0 5px;
     }
@@ -38,14 +41,38 @@ body {
     width:100% ;
     height: 50%;
     background-color: rgba(255, 255, 255, 0.585);
+
+    .menu__titulo{
+      visibility: hidden;
+    }
+
+    .parrafo__presentacion{
+      padding: 0 30px;
+      font-size: 1.2rem;
+      font-family: 'Satisfy', cursive;
+    }
   }
 
-  footer{
-    width: 100%;
-    height: 10%;
+  
   }
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+
+    .nuestras__redes{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .redes__titulo{
+        font-size: 1rem;
+      }
+    }
 }
 }
+
 
   /*
 @media (min-width: 375px) and (max-width: 991px) {

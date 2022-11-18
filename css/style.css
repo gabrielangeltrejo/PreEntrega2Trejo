@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Sarabun:ital,wght@0,200;0,400;0,500;0,600;0,800;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Satisfy & display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -56,8 +57,9 @@ body {
   .lados .lado__header .nav__ul {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
   }
-  .lados .lado__header .nav__ul .menu__item {
+  .lados .lado__header .nav__ul .nav__item {
     background-color: rgba(127, 200, 170, 0.597);
     padding: 0 5px;
   }
@@ -66,9 +68,27 @@ body {
     height: 50%;
     background-color: rgba(255, 255, 255, 0.585);
   }
-  .lados footer {
+  .lados main .menu__titulo {
+    visibility: hidden;
+  }
+  .lados main .parrafo__presentacion {
+    padding: 0 30px;
+    font-size: 1.2rem;
+    font-family: "Satisfy", cursive;
+  }
+  .footer {
     width: 100%;
-    height: 10%;
+    height: auto;
+    background-color: black;
+    color: white;
+  }
+  .footer .nuestras__redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer .nuestras__redes .redes__titulo {
+    font-size: 1rem;
   }
 }
 /*
