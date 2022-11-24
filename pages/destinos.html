@@ -4,103 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Destinos | Nuestra Agencia</title>
+    <title>Destinos | Nuna Viajes</title>
     <meta name="description" content="Los mejores destinos que tenemos para ofrecerte, al mejor precio">
     <meta name="keywords" content="Viajes, Argentina, Turismo, Naturaleza, Destinos, Vacaciones,Nacionales">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../styles/bootstrap.css">
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
-    <header>
-      <nav class="menu">
-        <h1 class="menu_titulo">Nuestra Agencia</h1>
-        <ul class="nav">
-          <li><a href="../index.html">Home</a></li>
-          <li class="menu_item active"><a href="destinos.html">Destinos</a></li>
-          <li><a href="iniciar.html">Ingresar</a></li>
-          <li><a href="quienes-somos.html"> Quienes somos</a></li>
-          <li><a href="contacto.html"> Contacto</a></li>
+    <header class="header__pages">
+      <div class="div__logo--pages">
+        <img
+          class="header__logo--pages"
+          src="../imagenes/logo_grd.png"
+          alt="logo Nuna Viajes, somos experiencias"
+        />
+      </div>
+      <nav class="nav__bar__pages">
+        <ul class="nav__bar__ul--pages">
+          <li class="nav__bar__item--pages">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="nav__bar__item--pages">
+            <a href="destinos.html">Destinos</a>
+          </li>
+          <li class="nav__bar__item--pages">
+            <a href="iniciar.html">Ingresar</a>
+          </li>
+          <li class="nav__bar__item--pages">
+            <a href="quienes-somos.html"> Quienes somos</a>
+          </li>
+          <li class="nav__bar__item--pages menu_item active">
+            <a href="contacto.html"> Contacto</a>
+          </li>
         </ul>
+        <h1 class="menu__titulo--pages">Nuna Viajes</h1>
       </nav>
     </header>
 
     <main>
       <h2>Destinos</h2>
-      <section class="destinos__totales">
-        <div class="destinos_inter_nacio caja__span">
-          <h3 class="destino_titulo">Brasil</h3>
-          <img
-            class="destino_imagen"
-            src="../imagenes/destinos/brasil.jpg"
-            alt="bandera de brasil"
-          />
-          <p class="destino.destinos_parrafo">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-            pariatur vitae expedita? Exercitationem adipisci tempore quibusdam
-            molestias cumque, libero explicabo aliquam, suscipit sequi a sit in,
-            cupiditate eveniet sapiente dolorem!
-          </p>
-          <button class="destinos_boton">Ver más</button>
-        </div>
-
-        <div class="destinos_inter_nacio caja__span">
-          <h3 class="destino_titulo">EEUU</h3>
-          <img
-            class="destino_imagen"
-            src="../imagenes/destinos/eeuu.jpg"
-            alt="bandera estadounidense"
-          />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-            pariatur vitae expedita? Exercitationem adipisci tempore quibusdam
-            molestias cumque, libero explicabo aliquam, suscipit sequi a sit in,
-            cupiditate eveniet sapiente dolorem!
-          </p>
-          <button class="destinos_boton">Ver más</button>
-        </div>
-
-        <div class="destinos_inter_nacio caja__span">
-          <h3 class="destino_titulo">Asia</h3>
-          <img
-            class="destino_imagen"
-            src="../imagenes/destinos/asia.jpg"
-            alt="playa"
-          />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-            pariatur vitae expedita? Exercitationem adipisci tempore quibusdam
-            molestias cumque, libero explicabo aliquam, suscipit sequi a sit in,
-            cupiditate eveniet sapiente dolorem!
-          </p>
-          <button class="destinos_boton">Ver más</button>
-        </div>
-
-        <div class="destinos_inter_nacio caja__span">
-          <h3 class="destino_titulo">Europa</h3>
-          <img
-            class="destino_imagen"
-            src="../imagenes/destinos/europa.jpg"
-            alt="distintos atractivos turisticos"
-            width="300px"
-          />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-            pariatur vitae expedita? Exercitationem adipisci tempore quibusdam
-            molestias cumque, libero explicabo aliquam, suscipit sequi a sit in,
-            cupiditate eveniet sapiente dolorem!
-          </p>
-          <button class="destinos_boton">Ver más</button>
-        </div>
-
-        <div class="caja_destinos_nacio">
-          <div class="caja__escapada">
-            <h3 class="destino_titulo">Patagonia</h3>
+      <section class="section__destinos">
+        <div class="conteiner__destinos__nacionales">
+          <div class="caja__destinos">
+            <h3 class="destinos__titulo">Patagonia</h3>
             <img
-              class="escapada_imagen"
+              class="destinos__imagen"
               src="../imagenes/destinos/pata.jpeg"
-              alt=""
+              alt="montañas, glaciares y lagos de la patagonia"
               width="300px"
             />
             <p>
@@ -109,15 +61,15 @@
               molestias cumque, libero explicabo aliquam, suscipit sequi a sit
               in, cupiditate eveniet sapiente dolorem!
             </p>
-            <button class="destinos_boton">Ver más</button>
+            <button class="boton">Ver más</button>
           </div>
 
-          <div class="caja__escapada">
-            <h3 class="destino_titulo">Litoral</h3>
+          <div class="caja__destinos">
+            <h3 class="destinos__titulo">Litoral</h3>
             <img
-              class="escapada_imagen"
+              class="destinos__imagen"
               src="../imagenes/destinos/litoral.jpg"
-              alt=""
+              alt="selva con saltos de agua"
               width="300px"
             />
             <p>
@@ -126,15 +78,15 @@
               molestias cumque, libero explicabo aliquam, suscipit sequi a sit
               in, cupiditate eveniet sapiente dolorem!
             </p>
-            <button class="destinos_boton">Ver más</button>
+            <button class="boton">Ver más</button>
           </div>
 
-          <div class="caja__escapada">
-            <h3 class="destino_titulo">Cuyo</h3>
+          <div class="caja__destinos">
+            <h3 class="destinos__titulo">Cuyo</h3>
             <img
-              class="escapada_imagen"
+              class="destinos__imagen"
               src="../imagenes/destinos/cuyo.jpg"
-              alt=""
+              alt="montañas y viñedos"
               width="300px"
             />
             <p>
@@ -143,15 +95,15 @@
               molestias cumque, libero explicabo aliquam, suscipit sequi a sit
               in, cupiditate eveniet sapiente dolorem!
             </p>
-            <button class="destinos_boton">Ver más</button>
+            <button class="boton">Ver más</button>
           </div>
 
-          <div class="caja__escapada">
-            <h3 class="destino_titulo">Norte</h3>
+          <div class="caja__destinos">
+            <h3 class="destinos__titulo">Norte</h3>
             <img
-              class="escapada_imagen"
+              class="destinos__imagen"
               src="../imagenes/destinos/norte.jpg"
-              alt=""
+              alt="cerro multicolores"
               width="300px"
             />
             <p>
@@ -160,15 +112,15 @@
               molestias cumque, libero explicabo aliquam, suscipit sequi a sit
               in, cupiditate eveniet sapiente dolorem!
             </p>
-            <button class="destinos_boton">Ver más</button>
+            <button class="boton">Ver más</button>
           </div>
 
-          <div class="caja__escapada">
-            <h3 class="destino_titulo">Córdoba</h3>
+          <div class="caja__destinos">
+            <h3 class="destinos__titulo">Córdoba</h3>
             <img
-              class="escapada_imagen"
-              src="../imagenes/cordoba.jpg"
-              alt=""
+              class="destinos__imagen"
+              src="../imagenes/destinos/cordoba.jpg"
+              alt="catedral de cordoba"
               width="300px"
             />
             <p>
@@ -177,15 +129,15 @@
               molestias cumque, libero explicabo aliquam, suscipit sequi a sit
               in, cupiditate eveniet sapiente dolorem!
             </p>
-            <button class="destinos_boton">Ver más</button>
+            <button class="boton">Ver más</button>
           </div>
 
-          <div class="caja__escapada">
-            <h3 class="destino_titulo">Buenos Aires</h3>
+          <div class="caja__destinos">
+            <h3 class="destinos__titulo">Buenos Aires</h3>
             <img
-              class="escapada_imagen"
-              src="../imagenes/destinos/Buenos-Aires.jpg"
-              alt=""
+              class="destinos__imagen"
+              src="../imagenes/destinos/buenos_aires.png"
+              alt="obelisco de la ciudad de buenos aires"
               width="300px"
             />
             <p>
@@ -194,42 +146,25 @@
               molestias cumque, libero explicabo aliquam, suscipit sequi a sit
               in, cupiditate eveniet sapiente dolorem!
             </p>
-            <button class="destinos_boton">Ver más</button>
+            <button class="boton">Ver más</button>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="container-fluid bg-azul mt-5">
-      <div class="container p-3 border-bottom">
-        <div class="row justify-content-lg-between align-items-lg-center">
-          <div class="col-lg-3 d-flex flex-column align-items-center">
-            <img class="w-50" src="./imagenes/logo.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <span>MAIL@GMAIL.COM</span>
-          </div>
-          <div class="col-lg-3 py-4 p-lg-0">
-            <h3 class="text-center">Nuestras Redes</h3>
-            <div class="fs-1 d-flex justify-content-around" >
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-twitter"></i>
-              <i class="bi bi-linkedin"></i>
-            </div>
-          </div>
+    <footer class="footer">
 
-          <div class="col-lg-4">
-            <h3 class="text-center">Suscribite para más información</h3>
-            <form action="" class="d-flex ">
-              <input type="email" placeholder="nombre@ejemplo.com" class="form-control">
-              <input type="submit" value="Enviar" class="btn btn-form ms-2">
-            </form>
-          </div>
-        </div>
+      <div class="nuestras__redes">
+        <h2 class="redes__titulo">Nuna Redes:</h2>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-linkedin"></i>
       </div>
+    </div>
 
-      <div>
-        <p class="text-center m-0 p-2">Nuestra Agencia | Todos los derechos reservados</p>
+      <div class="text-center m-0 p-2">
+        <p>Nuna Viajes | Todos los derechos reservados</p>
       </div>
     </footer>
   </body>

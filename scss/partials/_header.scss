@@ -1,0 +1,38 @@
+.header__pages {
+  @media (min-width: 375px) {
+    background-color: rgba(255, 255, 255, 0.58);
+    display: flex;
+    flex-direction: column;
+
+    .div__logo--pages {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 30%;
+        height: 80%;
+      }
+    }
+
+    .nav__bar__pages {
+      background-color: $color-primario;
+      display: flex;
+      flex-direction: row wrap;
+      justify-content: center;
+      width: 100vw;
+
+      h1 {
+        display: none;
+      }
+
+      .nav__bar__ul--pages {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 5px 0px 5px;
+      }
+    }
+  }
+}

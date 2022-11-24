@@ -1,0 +1,68 @@
+@media (min-width: 375px) {
+  .contacto__section {
+    display: flex;
+    flex-direction: column;
+
+    .preguntas__section {
+      background: rgb(127,200,183);
+      background: linear-gradient(56deg, rgba(127,200,183,1) 22%, rgba(213,238,187,1) 44%, rgba(95,122,97,1) 85%);
+      color: black;
+      border: solid 2px grey;
+      border-radius: 10px;
+      margin: 50px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      justify-content: space-evenly;
+
+      h2{
+        font-size: 1.2rem;
+        font-family: "Satisfy", cursive;
+      }
+
+      div li {
+        list-style: circle;
+      }
+    }
+
+    .form__contacto {
+      background: rgb(127,200,183);
+      background: linear-gradient(56deg, rgba(127,200,183,1) 22%, rgba(213,238,187,1) 44%, rgba(95,122,97,1) 85%);
+      color: black;
+      border: solid 2px grey;
+      border-radius: 10px;
+      margin: 50px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      justify-content: space-evenly;
+
+      h2 {
+        font-size: 1.2rem;
+        font-family: "Satisfy", cursive;
+      }
+
+      .form__input {
+        width: 70%;
+        gap: 7px;
+      }
+    }
+  }
+}
+
+@media (min-width:992px){
+    .contacto__section {
+        flex-direction: row;
+
+        .preguntas__section{
+            width: 45%;
+        }
+
+        .form__section{
+            width: 45%;
+        }
+    }
+    
+}

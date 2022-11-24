@@ -5,105 +5,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto | Nuestra Agencia</title>
-    <meta name="description" content="Queremos ayudarte, escribinos">
-    <meta name="keywords" content="Viajes, Argentina, Turismo, Naturaleza, Destinos, Vacaciones,Nacionales">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../styles/bootstrap.css">
-    <link rel="stylesheet" href="../styles/style.css" />
+    <meta name="description" content="Queremos ayudarte, escribinos" />
+    <meta
+      name="keywords"
+      content="Viajes, Argentina, Turismo, Naturaleza, Destinos, Vacaciones,Nacionales"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
-    <header>
-      <nav class="menu">
-        <h1 class="menu_titulo">Nuestra Agencia</h1>
-        <ul class="nav">
-          <li ><a href="../index.html">Home</a></li>
-          <li><a href="destinos.html">Destinos</a></li>
-          <li><a href="iniciar.html">Ingresar</a></li>
-          <li><a href="quienes-somos.html"> Quienes somos</a></li>
-          <li class="menu_item active"><a href="contacto.html"> Contacto</a></li>
+    <header class="header__pages">
+      <div class="div__logo--pages">
+        <img
+          class="header__logo--pages"
+          src="../imagenes/logo_grd.png"
+          alt="logo Nuna Viajes, somos experiencias"
+        />
+      </div>
+      <nav class="nav__bar__pages">
+        <ul class="nav__bar__ul--pages">
+          <li class="nav__bar__item--pages">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="nav__bar__item--pages">
+            <a href="destinos.html">Destinos</a>
+          </li>
+          <li class="nav__bar__item--pages">
+            <a href="iniciar.html">Ingresar</a>
+          </li>
+          <li class="nav__bar__item--pages">
+            <a href="quienes-somos.html"> Quienes somos</a>
+          </li>
+          <li class="nav__bar__item--pages menu_item active">
+            <a href="contacto.html"> Contacto</a>
+          </li>
         </ul>
+        <h1 class="menu__titulo--pages">Nuna Viajes</h1>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <form action="contacto">
-          <h3>Contacto</h3>
+    <main class="contacto__section">
+
+      <section class="preguntas__section">
+        <h2>Preguntas Frecuentes</h2>
+        <div>
           <div>
-            <label for="nombre-apellido">Nombre y Apellido</label>
-            <input
+            <li>¿Hacen viajes al exterior?<p>Por el momento, no. Pero pronto podran acceder a ellos en nuestra seccion de destinos.</p></li>
+          </div>
+
+          <div>
+            <li>¿Qué medios de pago aceptan?<p>Podés pagar con tarjetas de credito, débito, por transferencia ó efectivo y próximante un sitema propio de credito personales.</p></li>
+          </div>
+
+          <div>
+            <li>¿Hacen paquetes personalizados?<p>Por supuesto! Tenemos ofertas personalizdas para todos nuestros clientes.</p></li>
+          </div>
+
+          <div>
+            <li>¿Los menores pagan lo mismo?<p>Menores de 3 años (inclusive) acompañados por al menos 2 mayores NO abonan.Menores con 4 años cumplidos en adelante abonan como adulto.</p></li>
+          </div>
+
+          <div>
+            <li>¿Si quiero pagar en efectivo donde pago?<p>Una vez recibidos los datos solicitados para reservar, emitimos una confirmacion de reverva para que pases por nuestras Oficinas.
+            </p></li>
+          </div>
+        </div>
+      </section>
+
+      <section class="form__section">
+        <form class="form__contacto" action="contacto">
+          <h2>Contacto</h2>
+          <div class="form__item">
+            <label for="nombre-apellido"></label>
+            <input class="form__input"
               type="text"
               required
               id="nombre-apellido"
-              placeholder="Juan Perez"
+              placeholder="Nombre y Apellido"
             />
           </div>
 
-          <div>
-            <label for="e-mail">E-mail</label>
-            <input
+          <div class="form__item">
+            <label for="e-mail"></label>
+            <input class="form__input"
               type="email"
               required
               id="e-mail"
-              placeholder="juanperez@gmail.com"
+              placeholder="E-mail"
             />
           </div>
 
-          <div>
-            <label for="telefono-celular">Telefono/ Celular</label>
-            <input
+          <div class="form__item">
+            <label for="telefono-celular"></label>
+            <input class="form__input"
               type="text"
               required
               id="telefono-celular"
-              placeholder="(011)1528324555"
+              placeholder="Telefono/ Celular"
             />
           </div>
 
-          <div>
-            <label for="mensaje">Mensaje (optativo)</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+          <div class="form__item">
+            <label for="mensaje"></label>
+            <textarea class="form__input"
+              name="mensaje"
+              id="mensaje"
+              cols="30"
+              rows="5"
+              placeholder="Mensaje (optativo)"
+            ></textarea>
           </div>
 
-          <div>
-            <input type="submit"/>
+          <div class="form__item enviar">
+            <input class="form__input" type="submit" />
           </div>
         </form>
       </section>
+
+      
     </main>
 
-    <footer class="container-fluid bg-azul mt-5">
-      <div class="container p-3 border-bottom">
-        <div class="row justify-content-lg-between align-items-lg-center">
-          <div class="col-lg-3 d-flex flex-column align-items-center">
-            <img class="w-50" src="./imagenes/logo.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <span>MAIL@GMAIL.COM</span>
-          </div>
-          <div class="col-lg-3 py-4 p-lg-0">
-            <h3 class="text-center">Nuestras Redes</h3>
-            <div class="fs-1 d-flex justify-content-around" >
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-twitter"></i>
-              <i class="bi bi-linkedin"></i>
-            </div>
-          </div>
+    <footer class="footer">
 
-          <div class="col-lg-4">
-            <h3 class="text-center">Suscribite para más información</h3>
-            <form action="" class="d-flex ">
-              <input type="email" placeholder="nombre@ejemplo.com" class="form-control">
-              <input type="submit" value="Enviar" class="btn btn-form ms-2">
-            </form>
-          </div>
-        </div>
+      <div class="nuestras__redes">
+        <h2 class="redes__titulo">Nuna Redes:</h2>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-linkedin"></i>
       </div>
+    </div>
 
-      <div>
-        <p class="text-center m-0 p-2">Nuestra Agencia | Todos los derechos reservados</p>
+      <div class="text-center m-0 p-2">
+        <p>Nuna Viajes | Todos los derechos reservados</p>
       </div>
     </footer>
-
   </body>
 </html>

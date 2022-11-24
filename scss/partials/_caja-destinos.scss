@@ -1,0 +1,22 @@
+.caja__destinos {
+  h3 {
+    font-family: "Satisfy", cursive;
+  }
+
+  background-color: white;
+  margin: 10px;
+  width: 30%;
+  height: 500px;
+  padding: 10px;
+
+  .destinos__imagen {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+  }
+
+  p {
+    font-family: "Satisfy", cursive;
+    height: 50%;
+  }
+}

@@ -1,7 +1,9 @@
 @import"./base/reset";
 
 @import"./pages/home";
+@import"./pages/contacto"; 
 
 @import"./partials/header";
-@import"./partials/destinos";
+@import"./partials/caja-destinos";
 @import"./partials/footer";
+@import"./components/btn";
