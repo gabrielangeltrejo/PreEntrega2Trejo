@@ -14,13 +14,13 @@
 }
 
 @media (min-width: 992px) {
-  section .section__destinos{
+  section .section__destinos {
     display: flex;
     flex-flow: row wrap;
 
-      .caja__destinos {
+    .caja__destinos {
       width: 200px;
       height: 80vh;
+    }
   }
-}
 }

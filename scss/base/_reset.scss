@@ -1,33 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Sarabun:ital,wght@0,200;0,400;0,500;0,600;0,800;1,300&display=swap");
 
-@import url('https://fonts.googleapis.com/css2? family= Satisfy & display=swap');
+@import url("https://fonts.googleapis.com/css2? family= Satisfy & display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-    font-family: "Sarabun", sans-serif;
+  font-family: "Sarabun", sans-serif;
 }
 
 $color-primario: rgb(127, 200, 169);
 $color-secundario: rgb(213, 238, 187);
-$color-terciario:rgb(95, 122, 97);
-$color-cuaternario:rgb(68, 73, 65);
+$color-terciario: rgb(95, 122, 97);
+$color-cuaternario: rgb(68, 73, 65);
 
-body{
+body {
   min-height: 100vh;
 }
 
 nav a {
-    text-decoration: none;
-  }
-  
-  li {
-    list-style-type: none;
-    margin-right: 20px;
-    list-style-position: inside;
-  }
-  
-  a {
-    color: black;
-  }
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  margin-right: 20px;
+  list-style-position: inside;
+}
+
+a {
+  color: black;
+}

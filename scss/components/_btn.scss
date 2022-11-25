@@ -1,12 +1,12 @@
-.boton{
-    background-color: white;
-    color:$color-cuaternario;
-    padding: 5px;
-    border: solid 2px $color-cuaternario;
-    border-radius: 8px;
-    }
+.boton {
+  background-color: white;
+  color: $color-cuaternario;
+  padding: 5px;
+  border: solid 2px $color-cuaternario;
+  border-radius: 8px;
+}
 
-.boton:hover{
-        background-color: $color-cuaternario;
-        color: white;
-    }
+.boton:hover {
+  background-color: $color-cuaternario;
+  color: white;
+}
