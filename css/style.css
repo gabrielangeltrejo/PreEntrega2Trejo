@@ -8,7 +8,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 nav a {
@@ -197,6 +197,113 @@ body {
   }
 }
 @media (min-width: 375px) {
+  body .body__destinos {
+    min-height: 100vh;
+  }
+  body .body__destinos footer {
+    margin-top: auto;
+  }
+  body .body__destinos .section__destinos {
+    display: flex;
+    flex-flow: column;
+  }
+}
+@media (min-width: 992px) {
+  section .section__destinos {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  section .section__destinos .caja__destinos {
+    width: 200px;
+    height: 80vh;
+  }
+}
+@media (min-width: 375px) {
+  .body__iniciar {
+    min-height: 100vh;
+  }
+  main .section__inicar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.657);
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px gray;
+    width: 90vh;
+    height: 35%;
+  }
+  .footer .footer__inicar {
+    margin-bottom: auto;
+    align-self: flex-end;
+  }
+}
+@media (min-width: 576px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+@media (min-width: 375px) {
+  .somos__section {
+    display: flex;
+    flex-direction: column;
+  }
+  .opiniones__section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 250, 250, 0.657);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+  }
+  .opiniones__section h3 {
+    text-align: center;
+    font-family: "Satisfy", cursive;
+  }
+  .opiniones__section p {
+    text-align: center;
+    font-family: "Satisfy", cursive;
+  }
+  .opiniones__section .opiniones {
+    display: flex;
+    flex-direction: column;
+  }
+  .opiniones__section .opiniones .opniones__dif {
+    display: flex;
+    flex-direction: column;
+  }
+  .section__ubicacion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 250, 250, 0.657);
+    margin: 10px;
+    border: solid 1px gray;
+    border-radius: 10px;
+    padding: 5px 15px;
+  }
+  .section__ubicacion .ubicacion__titulo {
+    text-align: center;
+    font-family: "Satisfy", cursive;
+  }
+  .section__ubicacion .ubicacion__map {
+    width: 80%;
+    height: 50vh;
+  }
+}
+@media (min-width: 992px) {
+  .somos__section {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 375px) {
   .header__pages {
     background-color: rgba(255, 255, 255, 0.58);
     display: flex;
@@ -231,11 +338,11 @@ body {
 }
 
 .caja__destinos {
-  background-color: white;
+  background-color: rgb(213, 238, 187);
   margin: 10px;
-  width: 30%;
-  height: 500px;
   padding: 10px;
+  border: 1px solid rgb(68, 73, 65);
+  border-radius: 8px;
 }
 .caja__destinos h3 {
   font-family: "Satisfy", cursive;
@@ -244,6 +351,7 @@ body {
   width: 100%;
   height: 30%;
   object-fit: cover;
+  border-radius: 4px;
 }
 .caja__destinos p {
   font-family: "Satisfy", cursive;
@@ -255,6 +363,8 @@ body {
   height: 15vh;
   background-color: black;
   color: white;
+  align-self: flex-end;
+  margin-bottom: auto;
 }
 .footer .nuestras__redes {
   display: flex;

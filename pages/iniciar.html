@@ -8,26 +8,44 @@
     <meta name="description" content="Queremos conocerte">
     <meta name="keywords" content="Viajes, Argentina, Turismo, Naturaleza, Destinos, Vacaciones,Nacionales">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../styles/bootstrap.css">
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
-  <body>
-    <header>
-      <nav class="menu">
-        <h1 class="menu_titulo">Nuestra Agencia</h1>
-        <ul class="nav">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="destinos.html">Destinos</a></li>
-          <li class="menu_item active"><a href="iniciar.html">Ingresar</a></li>
-          <li><a href="quienes-somos.html"> Quienes somos</a></li>
-          <li><a href="contacto.html"> Contacto</a></li>
+  <body class="body__iniciar">
+    <header class="header__pages">
+      <div class="div__logo--pages">
+        <img
+          class="header__logo--pages"
+          src="../imagenes/logo_grd.png"
+          alt="logo Nuna Viajes, somos experiencias"
+        />
+      </div>
+      <nav class="nav__bar__pages">
+        <ul class="nav__bar__ul--pages">
+          <li class="nav__bar__item--pages">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="nav__bar__item--pages">
+            <a href="destinos.html">Destinos</a>
+          </li>
+          <li class="nav__bar__item--pages">
+            <a href="iniciar.html">Ingresar</a>
+          </li>
+          <li class="nav__bar__item--pages">
+            <a href="quienes-somos.html"> Quienes somos</a>
+          </li>
+          <li class="nav__bar__item--pages menu_item active">
+            <a href="contacto.html"> Contacto</a>
+          </li>
         </ul>
+        <h1 class="menu__titulo--pages">Nuna Viajes</h1>
       </nav>
     </header>
 
-    <main>
-      <section>
+
+    <main class="main__inicar">
+      <section class="section__inicar">
         <form action="crear-cuenta">
           <h3>Crear una cuenta</h3>
           <div>
@@ -76,12 +94,12 @@
           </div>
 
           <div>
-            <input type="submit"/>
+            <input class="boton" type="submit"/>
           </div>
         </form>
       </section>
 
-      <section>
+      <section  class="section__inicar">
         <form action="iniciar-sesion">
           <h3>Iniciar Sesión</h3>
           <div>
@@ -100,42 +118,25 @@
           </div>
 
           <div>
-            <input type="submit"/>
+            <input class="boton" type="submit"/>
           </div>
         </form>
       </section>
     </main>
 
-    <footer class="container-fluid bg-azul mt-5">
-      <div class="container p-3 border-bottom">
-        <div class="row justify-content-lg-between align-items-lg-center">
-          <div class="col-lg-3 d-flex flex-column align-items-center">
-            <img class="w-50" src="./imagenes/logo.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <span>MAIL@GMAIL.COM</span>
-          </div>
-          <div class="col-lg-3 py-4 p-lg-0">
-            <h3 class="text-center">Nuestras Redes</h3>
-            <div class="fs-1 d-flex justify-content-around" >
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-twitter"></i>
-              <i class="bi bi-linkedin"></i>
-            </div>
-          </div>
+    <footer class="footer footer__inicar">
 
-          <div class="col-lg-4">
-            <h3 class="text-center">Suscribite para más información</h3>
-            <form action="" class="d-flex ">
-              <input type="email" placeholder="nombre@ejemplo.com" class="form-control">
-              <input type="submit" value="Enviar" class="btn btn-form ms-2">
-            </form>
-          </div>
-        </div>
+      <div class="nuestras__redes">
+        <h2 class="redes__titulo">Nuna Redes:</h2>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-linkedin"></i>
       </div>
+    </div>
 
-      <div>
-        <p class="text-center m-0 p-2">Nuestra Agencia | Todos los derechos reservados</p>
+      <div class="text-center m-0 p-2">
+        <p>Nuna Viajes | Todos los derechos reservados</p>
       </div>
     </footer>
 

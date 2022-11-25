@@ -1,0 +1,26 @@
+@media (min-width: 375px) {
+  body .body__destinos {
+    min-height: 100vh;
+
+    footer {
+      margin-top: auto;
+    }
+
+    .section__destinos {
+      display: flex;
+      flex-flow: column;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  section .section__destinos{
+    display: flex;
+    flex-flow: row wrap;
+
+      .caja__destinos {
+      width: 200px;
+      height: 80vh;
+  }
+}
+}

@@ -8,83 +8,85 @@
     <meta name="description" content="Conocenos">
     <meta name="keywords" content="Viajes, Argentina, Turismo, Naturaleza, Destinos, Vacaciones,Nacionales">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../styles/bootstrap.css">
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
-    <header>
-      <nav class="menu">
-        <h1 class="menu_titulo">Nuestra Agencia</h1>
-        <ul class="nav">
-          <li ><a href="../index.html">Home</a></li>
-          <li><a href="destinos.html">Destinos</a></li>
-          <li><a href="iniciar.html">Ingresar</a></li>
-          <li class="menu_item active"><a href="quienes-somos.html"> Quienes somos</a></li>
-          <li><a href="contacto.html"> Contacto</a></li>
+    <header class="header__pages">
+      <div class="div__logo--pages">
+        <img
+          class="header__logo--pages"
+          src="../imagenes/logo_grd.png"
+          alt="logo Nuna Viajes, somos experiencias"
+        />
+      </div>
+      <nav class="nav__bar__pages">
+        <ul class="nav__bar__ul--pages">
+          <li class="nav__bar__item--pages">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="nav__bar__item--pages">
+            <a href="destinos.html">Destinos</a>
+          </li>
+          <li class="nav__bar__item--pages">
+            <a href="iniciar.html">Ingresar</a>
+          </li>
+          <li class="nav__bar__item--pages">
+            <a href="quienes-somos.html"> Quienes somos</a>
+          </li>
+          <li class="nav__bar__item--pages menu_item active">
+            <a href="contacto.html"> Contacto</a>
+          </li>
         </ul>
+        <h1 class="menu__titulo--pages">Nuna Viajes</h1>
       </nav>
     </header>
 
-    <main>
-      <section>
+    <main class="somos__section">
+      <section class="opiniones__section">
         <div class="quienes_somos">
           <h3 class="quienes_somos_titulo">Quienes somos</h3>
           <p class="quienes_somos_p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cum
-            quibusdam ad repellat, eius animi unde minima autem commodi
-            veritatis repellendus reiciendis esse, perspiciatis similique sed.
-            Quaerat accusamus enim soluta!
+            Somos una de las mejores agencias, en la Argentina, especializadas en destinos nacionales. En Nuna Viajes no solo vendemos pasajes, creamos experiencias que revitalizan el espíritu y nos recuerdan la simpleza y mística de las cosas cotidianas. Viaja con nosotros, crea con nosotros.
           </p>
         </div>
 
         <div class="opiniones">
-          <h4 class="opniones_titulo">Nuestros clientes (opniones)</h4>
-          <div class="opiniones_dif">
+          <h3 class="opniones_titulo">Nuestros clientes (opniones)</h3>
+          <div class="opiniones__dif">
             <span>Gonzalo Perez </span>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Accusamus blanditiis distinctio id tempora nisi reiciendis fugiat.
-              Quia expedita iste laudantium quod doloribus modi ipsa minus,
-              asperiores maiores? Porro, dolorum beatae.
+              <i>"Una de las mejores agencias con las que he viajado, siempre muy atentos. Cuando llegamos a misiones, nuestra agente de viajes se comunicó con nosotros para ver si el hotel había cumplido con todo los solicitado"</i> 
             </p>
           </div>
-          <div class="opiniones_dif">
+          <div class="opiniones__dif">
             <span>Isela Creyó</span>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Accusamus blanditiis distinctio id tempora nisi reiciendis fugiat.
-              Quia expedita iste laudantium quod doloribus modi ipsa minus,
-              asperiores maiores? Porro, dolorum beatae.
+              <i>"Muy buena atención, y buen precio, el hotel y las excursiones elegidas fueron muy lindas. Viajaría otra vez con ellos."</i> 
             </p>
           </div>
           <div>
-            <span class="opiniones_dif">Carolina Gonzales</span>
+            <span class="opiniones__dif">Carolina Gonzales</span>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Accusamus blanditiis distinctio id tempora nisi reiciendis fugiat.
-              Quia expedita iste laudantium quod doloribus modi ipsa minus,
-              asperiores maiores? Porro, dolorum beatae.
+              <i>"Me encantó, el bus llego en el tiempo acordado, el hotel era hermoso, aunque la piscina todavía no estaba habilitada. Las chicas de la agencia unas genias! Nos ayudaron con todo."</i> 
             </p>
           </div>
-          <div class="opiniones_dif">
+          <div class="opiniones__dif">
             <span>Fabián Doman</span>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Accusamus blanditiis distinctio id tempora nisi reiciendis fugiat.
-              Quia expedita iste laudantium quod doloribus modi ipsa minus,
-              asperiores maiores? Porro, dolorum beatae.
+              <i>"Me pareció muy buen servicio, el precio, razonable. Nos fuimos una semana, con mi esposa, a Mendoza, muy recomendable, la gente del hotel también, y nuestro guía, Mauricio, un genio."</i>
             </p>
           </div>
         </div>
       </section>
 
-      <section class="ubicacion">
-        <h3 class="ubicacion_titulo">Nuestra ubicación</h3>
-        <iframe class="ubicacion_map"
+      <section class="section__ubicacion">
+        <h3 class="ubicacion__titulo">Nuestra ubicación</h3>
+        <iframe class="ubicacion__map"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6542.724524771211!2d-57.95612675407101!3d-34.92245053552662!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e3fc93575%3A0x6ffaec3bf616e000!2sPlaza%20Moreno!5e0!3m2!1ses!2sar!4v1665016167424!5m2!1ses!2sar"
-          width="600"
-          height="450"
+          width="100%"
+          height=""
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
@@ -93,36 +95,19 @@
       </section>
     </main>
 
-    <footer class="container-fluid bg-azul mt-5">
-      <div class="container p-3 border-bottom">
-        <div class="row justify-content-lg-between align-items-lg-center">
-          <div class="col-lg-3 d-flex flex-column align-items-center">
-            <img class="w-50" src="./imagenes/logo.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <span>MAIL@GMAIL.COM</span>
-          </div>
-          <div class="col-lg-3 py-4 p-lg-0">
-            <h3 class="text-center">Nuestras Redes</h3>
-            <div class="fs-1 d-flex justify-content-around" >
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-twitter"></i>
-              <i class="bi bi-linkedin"></i>
-            </div>
-          </div>
+    <footer class="footer footer__inicar">
 
-          <div class="col-lg-4">
-            <h3 class="text-center">Suscribite para más información</h3>
-            <form action="" class="d-flex ">
-              <input type="email" placeholder="nombre@ejemplo.com" class="form-control">
-              <input type="submit" value="Enviar" class="btn btn-form ms-2">
-            </form>
-          </div>
-        </div>
+      <div class="nuestras__redes">
+        <h2 class="redes__titulo">Nuna Redes:</h2>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-linkedin"></i>
       </div>
+    </div>
 
-      <div>
-        <p class="text-center m-0 p-2">Nuestra Agencia | Todos los derechos reservados</p>
+      <div class="text-center m-0 p-2">
+        <p>Nuna Viajes | Todos los derechos reservados</p>
       </div>
     </footer>
   </body>
