@@ -1,24 +1,41 @@
 .caja__destinos {
-  h3 {
-    font-family: "Satisfy", cursive;
-  }
-
-  background-color: $color-secundario;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.567);
   margin: 10px;
   padding: 10px;
-  border: 1px solid $color-cuaternario;
+  border: 3px solid rgba(255, 255, 255, 0.802);
   border-radius: 8px;
-
-  .destinos__imagen {
-    width: 100%;
-    height: 30%;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-
-  p {
-    font-family: "Satisfy", cursive;
-    height: 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    background-color: rgba(173, 164, 164, 0.601);
+    padding: 3px;
+    border-radius: 3px;
+    a {
+      text-decoration: none;
+      color: black;
+      font-family: "Satisfy", cursive;
+    }
   }
 }
-
+.caja__patagonia {
+  background-image: url(../../imagenes/destinos/bariloche.jpg);
+}
+.caja__litoral {
+  background-image: url(../../imagenes/destinos/litoral.jpg);
+}
+.caja__cuyo {
+  background-image: url(../../imagenes/destinos/cuyo.jpg);
+}
+.caja__norte {
+  background-image: url(../../imagenes/destinos/norte.jpg);
+}
+.caja__cba {
+  background-image: url(../../imagenes/destinos/cordoba.jpg);
+}
+.caja__bsas {
+  background-image: url(../../imagenes/destinos/buenos_aires.png);
+}

@@ -7,6 +7,10 @@
   font-family: "Sarabun", sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   min-height: 100vh;
 }
@@ -55,17 +59,19 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    gap: 5px;
   }
   .lados .lado__header .nav__ul .nav__item {
     background-color: rgba(127, 200, 170, 0.597);
-    padding: 0 5px;
+    padding: 0 3px;
+    border-radius: 5px;
   }
   .lados .lado__main {
     width: 100%;
     height: 50%;
   }
   .lados .lado__main .menu__titulo {
-    visibility: hidden;
+    display: none;
   }
   .lados .lado__main .parrafo__presentacion {
     padding: 0 30px;
@@ -76,6 +82,7 @@ body {
 }
 @media (min-width: 992px) {
   .body__index {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 85% 15%;
@@ -100,9 +107,10 @@ body {
   }
   .body__index .lados .lado__header {
     grid-area: header;
-    width: 100%;
+    width: 90%;
     height: 80%;
-    align-content: center;
+    align-self: center;
+    margin: 50px;
   }
   .body__index .lados .lado__header .nav__bar {
     width: 100%;
@@ -120,8 +128,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 30px;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
   }
   .body__index .lados .lado__main .parrafo__presentacion {
     justify-content: center;
@@ -196,26 +204,93 @@ body {
     width: 45%;
   }
 }
+h2 {
+  background-color: rgba(255, 255, 255, 0.576);
+  margin: 5px 0;
+  padding: 4px;
+}
+
 @media (min-width: 375px) {
-  body .body__destinos {
+  .body__destinos {
     min-height: 100vh;
+    background-color: white;
   }
-  body .body__destinos footer {
+  .body__destinos footer {
     margin-top: auto;
   }
-  body .body__destinos .section__destinos {
+  .destinos__main {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .destinos__main .section__destinos {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .destinos__main .section__destinos div {
+    width: 40%;
+    height: 75px;
   }
 }
 @media (min-width: 992px) {
-  section .section__destinos {
+  .body__destinos {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
   }
-  section .section__destinos .caja__destinos {
-    width: 200px;
-    height: 80vh;
+  .body__destinos .header__destinos {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .body__destinos .header__destinos .div__logo--pages {
+    width: 100%;
+  }
+  .body__destinos .header__destinos .nav__bar__pages {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .body__destinos .destinos__main {
+    height: 75vh;
+  }
+  .body__destinos .destinos__main .section__destinos {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: stretch;
+    align-items: stretch;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas: "destino1 destino2 destino3" "destino1 destino2 destino3" "destino1 destino5 destino6" "destino4 destino5 destino6" "destino4 destino5 destino6";
+  }
+  .body__destinos .destinos__main .section__destinos div {
+    width: auto;
+    height: auto;
+  }
+  .body__destinos .destinos__main .section__destinos .caja__patagonia {
+    grid-area: destino1;
+  }
+  .body__destinos .destinos__main .section__destinos .caja__litoral {
+    grid-area: destino5;
+  }
+  .body__destinos .destinos__main .section__destinos .caja__cuyo {
+    grid-area: destino3;
+  }
+  .body__destinos .destinos__main .section__destinos .caja__norte {
+    grid-area: destino4;
+  }
+  .body__destinos .destinos__main .section__destinos .caja__cba {
+    grid-area: destino2;
+  }
+  .body__destinos .destinos__main .section__destinos .caja__bsas {
+    grid-area: destino6;
+  }
+  .body__destinos .footer__destinos {
+    height: auto;
   }
 }
 @media (min-width: 375px) {
@@ -239,7 +314,7 @@ body {
   }
 }
 @media (min-width: 576px) {
-  main {
+  .main__iniciar {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -338,24 +413,51 @@ body {
 }
 
 .caja__destinos {
-  background-color: rgb(213, 238, 187);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.567);
   margin: 10px;
   padding: 10px;
-  border: 1px solid rgb(68, 73, 65);
+  border: 3px solid rgba(255, 255, 255, 0.802);
   border-radius: 8px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .caja__destinos h3 {
+  background-color: rgba(173, 164, 164, 0.601);
+  padding: 3px;
+  border-radius: 3px;
+}
+.caja__destinos h3 a {
+  text-decoration: none;
+  color: black;
   font-family: "Satisfy", cursive;
 }
-.caja__destinos .destinos__imagen {
-  width: 100%;
-  height: 30%;
-  object-fit: cover;
-  border-radius: 4px;
+
+.caja__patagonia {
+  background-image: url(../../imagenes/destinos/bariloche.jpg);
 }
-.caja__destinos p {
-  font-family: "Satisfy", cursive;
-  height: 50%;
+
+.caja__litoral {
+  background-image: url(../../imagenes/destinos/litoral.jpg);
+}
+
+.caja__cuyo {
+  background-image: url(../../imagenes/destinos/cuyo.jpg);
+}
+
+.caja__norte {
+  background-image: url(../../imagenes/destinos/norte.jpg);
+}
+
+.caja__cba {
+  background-image: url(../../imagenes/destinos/cordoba.jpg);
+}
+
+.caja__bsas {
+  background-image: url(../../imagenes/destinos/buenos_aires.png);
 }
 
 .footer {
@@ -390,6 +492,209 @@ body {
 
 .boton:hover {
   background-color: rgb(68, 73, 65);
+  color: white;
+}
+
+.animacion__ul {
+  -webkit-animation: rotate-vert-center 1.5s;
+  animation: rotate-vert-center 1.5s;
+}
+
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+.animacion__p-presentacion {
+  -webkit-animation: tilt-in-tr 0.9s;
+  animation: tilt-in-tr 0.9s;
+}
+
+@-webkit-keyframes tilt-in-tr {
+  0% {
+    -webkit-transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px) skew(-12deg, -15deg);
+    transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px) skew(-12deg, -15deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-tr {
+  0% {
+    -webkit-transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px) skew(-12deg, -15deg);
+    transform: rotateY(-35deg) rotateX(20deg) translate(250px, -250px) skew(-12deg, -15deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+.animacion__logo {
+  -webkit-animation: tilt-in-tl 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-tl 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes tilt-in-tl {
+  0% {
+    -webkit-transform: rotateY(35deg) rotateX(20deg) translate(-250px, -250px) skew(12deg, 15deg);
+    transform: rotateY(35deg) rotateX(20deg) translate(-250px, -250px) skew(12deg, 15deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-tl {
+  0% {
+    -webkit-transform: rotateY(35deg) rotateX(20deg) translate(-250px, -250px) skew(12deg, 15deg);
+    transform: rotateY(35deg) rotateX(20deg) translate(-250px, -250px) skew(12deg, 15deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+.caja__bsas, .caja__cuyo {
+  -webkit-animation: roll-in-left 2s ease-out both;
+  animation: roll-in-left 2s ease-out both;
+}
+
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+.caja__patagonia, .caja__norte {
+  -webkit-animation: roll-in-right 2s ease-out both;
+  animation: roll-in-right 2s ease-out both;
+}
+
+@-webkit-keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-right {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+.caja__litoral {
+  -webkit-animation: roll-in-top 2s ease-out both;
+  animation: roll-in-top 2s ease-out both;
+}
+
+@-webkit-keyframes roll-in-top {
+  0% {
+    -webkit-transform: translateY(-800px) rotate(-540deg);
+    transform: translateY(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-top {
+  0% {
+    -webkit-transform: translateY(-800px) rotate(-540deg);
+    transform: translateY(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+.caja__cba {
+  -webkit-animation: roll-in-bottom 2s ease-out both;
+  animation: roll-in-bottom 2s ease-out both;
+}
+
+@-webkit-keyframes roll-in-bottom {
+  0% {
+    -webkit-transform: translateY(800px) rotate(540deg);
+    transform: translateY(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-bottom {
+  0% {
+    -webkit-transform: translateY(800px) rotate(540deg);
+    transform: translateY(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+header nav ul li a:hover {
   color: white;
 }
 

@@ -1,26 +1,98 @@
+
+h2 {
+  background-color: rgba(255, 255, 255, 0.576);
+  margin: 5px 0;
+  padding: 4px;
+}
+
 @media (min-width: 375px) {
-  body .body__destinos {
+  .body__destinos {
     min-height: 100vh;
+    background-color: white;
 
     footer {
       margin-top: auto;
     }
-
+  }
+  .destinos__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .section__destinos {
+      width: 100%;
       display: flex;
-      flex-flow: column;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      div {
+        width: 40%;
+        height: 75px;
+      }
     }
   }
 }
 
 @media (min-width: 992px) {
-  section .section__destinos {
+  .body__destinos {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    .header__destinos {
+      height: 15vh;
+      display: flex;
+      flex-direction: row;
+      .div__logo--pages {
+        width: 100%;
+      }
+      .nav__bar__pages {
+        background-color: rgba(255, 255, 255, 0);
+      }
+    }
+    .destinos__main {
+      height: 75vh;
 
-    .caja__destinos {
-      width: 200px;
-      height: 80vh;
+      .section__destinos {
+        div {
+          width: auto;
+          height: auto;
+        }
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: stretch;
+        align-items: stretch;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-areas:
+          "destino1 destino2 destino3"
+          "destino1 destino2 destino3"
+          "destino1 destino5 destino6"
+          "destino4 destino5 destino6"
+          "destino4 destino5 destino6";
+        .caja__patagonia {
+          grid-area: destino1;
+        }
+        .caja__litoral {
+          grid-area: destino5;
+        }
+        .caja__cuyo {
+          grid-area: destino3;
+        }
+        .caja__norte {
+          grid-area: destino4;
+        }
+        .caja__cba {
+          grid-area: destino2;
+        }
+        .caja__bsas {
+          grid-area: destino6;
+        }
+      }
+    }
+    .footer__destinos {
+      height: auto;
     }
   }
 }

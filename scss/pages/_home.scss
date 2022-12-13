@@ -29,10 +29,12 @@ body {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        gap: 5px;
 
         .nav__item {
           background-color: rgba(127, 200, 170, 0.597);
-          padding: 0 5px;
+          padding: 0 3px;
+          border-radius: 5px;
         }
       }
     }
@@ -42,7 +44,7 @@ body {
       height: 50%;
 
       .menu__titulo {
-        visibility: hidden;
+        display: none;
       }
 
       .parrafo__presentacion {
@@ -57,6 +59,7 @@ body {
 
 @media (min-width: 992px) {
   .body__index {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 85% 15%;
@@ -89,9 +92,10 @@ body {
 
       .lado__header {
         grid-area: header;
-        width: 100%;
+        width: 90%;
         height: 80%;
-        align-content: center;
+        align-self: center;
+        margin: 50px;
 
         .nav__bar {
           width: 100%;
@@ -112,8 +116,8 @@ body {
         display: flex;
         flex-direction: column;
         margin: 30px;
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
 
         .parrafo__presentacion {
           justify-content: center;
