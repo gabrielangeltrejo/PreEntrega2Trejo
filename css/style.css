@@ -204,7 +204,7 @@ body {
     width: 45%;
   }
 }
-h2 {
+.destinos__titulo {
   background-color: rgba(255, 255, 255, 0.576);
   margin: 5px 0;
   padding: 4px;
@@ -233,7 +233,7 @@ h2 {
   }
   .destinos__main .section__destinos div {
     width: 40%;
-    height: 75px;
+    height: 150px;
   }
 }
 @media (min-width: 992px) {
@@ -297,7 +297,7 @@ h2 {
   .body__iniciar {
     min-height: 100vh;
   }
-  main .section__inicar {
+  .body__iniciar main .section__inicar {
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.657);
@@ -305,20 +305,24 @@ h2 {
     padding: 20px;
     border-radius: 10px;
     border: solid 1px gray;
-    width: 90vh;
+    width: 90%;
     height: 35%;
   }
-  .footer .footer__inicar {
+  .body__iniciar main .section__inicar input {
+    margin-top: 5px;
+  }
+  .body__iniciar .footer .footer__inicar {
     margin-bottom: auto;
     align-self: flex-end;
   }
 }
 @media (min-width: 576px) {
-  .main__iniciar {
+  .main__inicar {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
+    padding: 5px;
   }
 }
 @media (min-width: 375px) {
